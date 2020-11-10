@@ -1,0 +1,48 @@
+.container-xl {
+    width: 100%;
+    max-width: $bp-xl;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.container-lg {
+    width: 100%;
+    max-width: $bp-lg;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.container {
+    width: 100%;
+    max-width: $bp-md;
+    
+
+    @include mq($bp-md) {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.container-sm {
+    width: 100%;
+    max-width: $bp-sm;
+
+
+    @include mq($bp-sm) {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.container-xs {
+    width: 100%;
+    max-width: $bp-xs;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+}

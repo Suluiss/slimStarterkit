@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>
+        {{globalMeta.title}} - {{globalMeta.description}}
+    </title>
+
+    <!-- The Meta Fun -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.png?v=1" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon.ico?v=1" type="image/x-icon">
+    <link rel="mask-icon" href="img/favicon/favicon.svg?v=1" color="{{globalMeta.themeColor}}" type="">
+
+    <link rel="canonical" href="{{globalMeta.baseUrl}}{{filename}}">
+
+    <meta name="theme-color" content="{{globalMeta.themeColor}}">
+
+    <!-- Scripts -->
+    <script src="js/site.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Third Party Assets -->
+    {{!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet"> --}}
+
+    <!-- Meta Tags -->
+    <meta name="description" content="{{globalMeta.description}}">
+
+    <!-- Open Graph Markup for Social Sharing -->
+    <meta property="og:title" content="{{globalMeta.title}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{globalMeta.baseUrl}}" />
+    <meta property="og:site_name" content="{{globalMeta.title}}" />
+    <meta property="og:description" content="{{globalMeta.description}}" />
+    <meta property="og:image" content="{{globalMeta.siteThumbnail.src}}" />
+    <meta property="og:image:width" content="{{globalMeta.siteThumbnail.width}}">
+    <meta property="og:image:height" content="{{globalMeta.siteThumbnail.height}}">
+
+    {{!-- <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content=""> --}}
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        {{> _nav}}
